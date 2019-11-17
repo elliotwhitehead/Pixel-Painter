@@ -5,11 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png" sizes="16x16" />
+
     <title>Pixel Picker</title>
+    <style>
+        .title{
+            position: absolute;
+            top:20px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            color: #fff;
+            text-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
+        }
+
+        #defaultCanvas0{
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        
+        #defaultCanvas0:hover{
+            cursor: crosshair;
+        }
+    </style>
 </head>
 <body>
-    <h1 class="center-align">Pixel Picker!</h1>
-    <p class="center-align">This is going to be a tool which will allow you to upload a photo, and then select colors from it, like an eyedropper.</p>
+    <div class="title">
+            <h1 class="center-align">Pixel Painter!</h1>
+            <h5 class="center-align">Click somewhere on the photo below (refresh for a new one) to pick a color out of it. Then, paint your masterpiece below!</h5>
+    </div>
     <script src="js/p5.min.js"></script>
     <script src="js/pimage.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
