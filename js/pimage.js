@@ -3,6 +3,7 @@ let img;
 function preload() {
     image_width = windowWidth - 40;
     image_height = windowHeight - 40;
+<<<<<<< HEAD
     try{
         img = loadImage("https://source.unsplash.com/collection/5699518/" + image_width + "x" + image_height);
     }catch(error){
@@ -10,6 +11,9 @@ function preload() {
         console.log("Using default photo");
         img = loadImage("https://source.unsplash.com/R9t48yAqI6U/" + image_width + "x" + image_height);
     }
+=======
+    img = loadImage("https://picsum.photos/id/756/" + image_width + "/" + image_height);
+>>>>>>> cb8cd262f31ff1067cb4f593fce95b9dcbd894d3
 }
 
 function setup() {
