@@ -3,7 +3,13 @@ let img;
 function preload() {
     image_width = windowWidth - 40;
     image_height = windowHeight - 40;
-    img = loadImage("https://picsum.photos/" + image_width + "/" + image_height);
+    try{
+        img = loadImage("https://source.unsplash.com/collection/5699518/" + image_width + "x" + image_height);
+    }catch(error){
+        console.log(error);
+        console.log("Using default photo");
+        img = loadImage("https://source.unsplash.com/R9t48yAqI6U/" + image_width + "x" + image_height);
+    }
 }
 
 function setup() {
