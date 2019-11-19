@@ -3,7 +3,7 @@ let img;
 function preload() {
     image_width = windowWidth - 40;
     image_height = windowHeight - 40;
-    img = loadImage("https://picsum.photos/" + image_width + "/" + image_height);
+    img = loadImage("https://picsum.photos/id/756/" + image_width + "/" + image_height);
 }
 
 function setup() {
